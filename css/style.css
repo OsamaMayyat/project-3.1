@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --maincolor: orange;
+    --subcolor: white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100% !important;
+    
+    border: transparent;
+    background-color: transparent;
+    padding: 0 70px;
+}
+.header a{
+    color: var(--subcolor) ;
+}
+.header a:hover{
+    color: var(--maincolor) ;
+    background-color: var(--subcolor);
+    border-radius: 10px;
+}
+.header .logo{
+    font-size: 30px;
+    color: rgb(255, 94, 0);
+}
+.header .logo:hover{
+    font-size: 30px;
+    background-color: transparent;
+    color: rgb(233, 154, 7);
+}
+#home-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#carouselExampleFade{
+    height: 100% ;
+    width: 100% ;
+    position: absolute;  
+}
+.carousel-inner,
+.carousel-item,
+img{
+    height: 100% ;
+    width: 100% ; 
+}
+img{
+    object-fit: cover;
+}
+.header button{
+    background-color: transparent;
+    border: 1px solid var(--subcolor);
+}
+.header button i{
+    color: var(--maincolor);
+    
+}
+#home-page .home-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 10;
+    color: var(--subcolor);
+}
+#home-page .home-text h1{
+    color: var(--maincolor);
+    margin-bottom: 10px;
+}
+#home-page .home-text button{
+    color: var(--subcolor);
+    background-color: var(--maincolor);
+    border: 1px solid var(--subcolor);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+#home-page .home-text button:hover{
+
+    color: var(--maincolor);
+    background-color: transparent;
+    border: 1px solid var(--maincolor);
+
+}
+.contant{
+    padding: 50px 70px;
+}
+.itemPrice{
+    color: rgb(255, 196, 0);
+}
+.image{
+    width: 25%;
+}
+.btn-Order{
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: var(--subcolor);
+    border: 1px solid rgb(255, 102, 0);
+    border-radius: 15px;
+    color: rgb(255, 102, 0);
+}
+.btn-Order:hover{
+    background-color: rgb(255, 102, 0);
+    border: 1px solid rgb(255, 102, 0);
+    border-radius: 15px;
+    color: var(--subcolor);
+}
+.menu{
+    margin-top: 70px;
+    font-size: 50px;
+    color: var(--maincolor);
+}
+.contant a {
+    color: var(--maincolor);
+    font-size: 18px;
+}
+.textitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.backImg{
+    position: relative;
+    height: 270px;
+    margin-bottom: 15px;
+}
+.backImg:hover .offer{
+    opacity: 1;
+    transition: 0.7s;
+}
+.offer{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100%;
+}
+.offeritem{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.offerprice{
+    font-size: 20px;
+    color: var(--subcolor);
+
+}
+.offerprice span{
+    font-size: 35px;
+    color: var(--maincolor);
+}
+
+.offername{
+    font-size: 25px;
+    color: rgb(255, 145, 0);
+}
+.btn-offer{
+    padding: 5px 10px ;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 72, 0);
+    color: rgb(255, 72, 0);
+    background-color: var(--subcolor);
+    
+}
+.btn-offer:hover{
+    border: 1px solid rgb(255, 72, 0);
+    color: var(--subcolor);
+    background-color:rgb(255, 72, 0);
+    
+}
+.time{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 50;
+    background-image: linear-gradient(90deg,rgb(245, 197, 65),rgb(235, 197, 93),rgb(214, 192, 132));
+    padding: 5px 10px;
+    border: 1px solid var(--maincolor);
+    border-radius: 10px;
+}
+.i i{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 50;
+    background-color: var(--subcolor);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--maincolor);
+    
+
+}
+.i a{
+    color: var(--maincolor);
+    transition: 1s;
+    opacity: 0;
+}
+#About{
+    background-image: url(../image/cover1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+.color{
+    background-image: linear-gradient(180deg,rgba(255, 166, 0, 0.507),rgba(251, 255, 0, 0.575),rgba(0, 153, 255, 0.493));
+}
+.textpadd{
+    padding: 10px 15px;
+    text-align: center;
+
+}
+.padd{
+    padding: 0 !important;
+    overflow: hidden;
+}
+img{
+    transition: 1s;
+
+}
+.padd img:hover{
+    transform: scale(1.2);
+}
+#contact6{
+    position: relative;
+}
+.roww{
+    position: relative;
+}
+#contact .contact2{
+
+    z-index: 10;
+    color: var(--subcolor);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.roww{
+    padding: 80px 0;
+    justify-content: center;
+    align-items: center;
+}
+form input
+,form textarea{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    padding: 5px 10px;
+}
+form input:focus{
+    outline: none;
+    border: 2px solid var(--maincolor);
+}
+form textarea:focus{
+    outline: none;
+    border: 2px solid var(--maincolor);
+}
+form button{
+    width: 100%;
+    color: var(--maincolor);
+    border: 1px solid var(--maincolor);
+    background-color: var(--subcolor);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+form button:hover{
+    color: var(--subcolor);
+    border: 1px solid var(--maincolor);
+    background-color: var(--maincolor);
+}
+#team{
+    position: relative;
+}
+.claa{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.claa:hover .teaminfo{
+    opacity: 1;
+    top: 60%;
+}
+.teaminfo{
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: 0.7s;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(231, 175, 71, 0.692);
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.teamName{
+    font-size: 25px;
+    color: var(--subcolor);
+}
+.teamLink a{
+    color: var(--subcolor);
+    margin: 0 5px;
+}
+.teamLink a i{
+font-size: 30px;
+}
+.teamLink a:hover{
+    color: var(--maincolor);
+
+}
+.shadow:hover{
+    box-shadow: 2px 2px 2px 2px #ddd;
+}
+.foott{
+    background-image: url(../image/cover4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.rest a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.foott ul{
+    list-style: none;
+}
+.foott h2{
+    color: var(--maincolor);
+}
+.cont a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.abouttext{
+    color: var(--subcolor);
+}
+.footer{
+    padding: 0 15px !important;
+    background-color: transparent !important;
+}
+.footer p{
+    float: right;
+    margin: 0;
+}
+.cont a{
+    font-size: 30px;
+}
+.cont .cl1{
+    color: blue;
+}
+.cont .cl3{
+    color: green;
+}
+.cont .cl2{
+    color: rgb(255, 0, 157);
+}
+
+@media (max-width:650px){
+    .menu{
+        font-size: 30px;
+    }
+
+}
+@media (max-width:991px){
+    
+    .header{
+        background-image: linear-gradient(180deg,rgb(255, 255, 255),rgb(245, 182, 9),rgb(245, 182, 9));
+    }
+}
+@media (max-width:1000px){
+    .dele{
+        display: none;
+    }
+}
+@media (max-width:574px){
+    .size{
+        padding: 0 15px !important;
+    }
+    .contant a {
+        color: var(--maincolor);
+        font-size: 14px;
+    }
+    .contant {
+        padding: 50px 30px;
+    }
+}
+
+
